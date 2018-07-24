@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Galarraga</title>
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .bg-1 { 
+        background-color: white; /* Green */
+        color: black;
+    }
+    .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <script> 
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+              jQuery('body').fadeIn();
+              jQuery('a').on('click', function(event) {
+                var target = this.getAttribute('target')
+                if (target != '_blank') {
+                  var href = this.getAttribute('href')
+                  event.preventDefault();
+                  jQuery('body').fadeOut(function(){
+                    window.location = href
+                  });
+                }
+              });
+            });
+            setTimeout(function() {
+              jQuery('body').fadeIn();
+            },1000) 
+          </script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center" >
+    <a href="./index.html" class="navbar-brand d-flex w-50 mr-auto" id = "name">Daniel Galarraga</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end" id = "menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="MyResume.pdf" target = "_blank">Resume</a>
+            </li>
+        </ul>
+    </div>
+    </nav> 
+    <hr style="border: 1px solid black"/>  
+    <div class = "wrapper">
+      <nav id="sidebar">
+        <figure class="figure" id = "img_header">
+          <img src="./me.jpg" class="figure-img img-fluid rounded" alt="Me">
+          <figcaption class="figure-caption text-center" style="color: black; font-size: 1.1em;" >
+            Daniel Galarraga </br> Cornell CS '21 </figcaption>
+        </figure>
+        <ul class="list-unstyled">
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./linkedin.png" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "https://www.linkedin.com/in/daniel-galarraga/" target="_blank">LinkedIn</a>
+            </div>
+          </li>
+        </br>
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./github.jpg" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "https://github.com/danielgalarraga" target="_blank">GitHub</a>
+            </div>
+          </li>
+          </br>
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./email.png" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "mailto: danielga11@hotmail.com" target="_blank">Email</a>
+            </div>
+          </li>
+        </ul>
+        </nav> 
+      <div id="content_projects" style= "margin-right: 20vw; max-width: 70vw;">
+            <h2 style = "font-weight: bold; font-size: 2vw;"> Audio & Video Merger </h2>
+        </br>
+        <p style = "font-size: 1.4vw;"> Given a set of images and an audio recording, the scripts first generate a silent video from the set of images, and then create a video with audio whose duration is the minimum of the lengths of the audio and the silent video. A sample of what the scripts can accomplish is shown below. </p>
+        <div class='card-deck' style="max-width: 90vw; padding-left: 50px;">
+        <ul class="list-group text-center" style="max-width: 15vw">
+            <audio id="sound1" src="./Project1/recording.mp3" preload="auto"></audio>
+          <li class="list-group-item" id = "item1"><button style = "max-width: 10vh; font-size: 1vw;" type="button" class="btn btn-dark btn-lg" onclick="document.getElementById('sound1').play();"> 
+                Audio 
+          </button></li>
+          <li class="list-group-item" id = "item2"><img src="./Project1/plus.png" class ="img-fluid" style="max-width: 4vw;"></li>
+          <li class="list-group-item" id = "item3"><img src="./Project1/pic.jpg" class ="img-fluid" style="max-width: 10vw;"></li>
+        </ul>
+        <ul class="list-group text-center" style="max-width: 20vw; padding-top: 63px;">
+          <li class="list-group-item" id = "item4"><img src="./Project1/equalsign.png" class ="img-fluid" style="max-width: 4vw;"></li>
+        </ul>
+        <video width="280" height="200" controls>
+                  <source src="./Project1/merged.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+        </video>
+    </div>
+    </div>  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

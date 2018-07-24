@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Galarraga</title>
+
+    <title>Theme Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    .bg-1 { 
+        background-color: white; /* Green */
+        color: black;
+    }
+    .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    
+    </style>
+  </head>
+
+  <body>
+    <script> 
+            jQuery('body').css('display','none');
+            jQuery(document).ready(function() {
+              jQuery('body').fadeIn();
+              jQuery('a').on('click', function(event) {
+                var target = this.getAttribute('target')
+                if (target != '_blank') {
+                  var href = this.getAttribute('href')
+                  event.preventDefault();
+                  jQuery('body').fadeOut(function(){
+                    window.location = href
+                  });
+                }
+              });
+            });
+            setTimeout(function() {
+              jQuery('body').fadeIn();
+            },1000) 
+          </script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center" >
+    <a href="./index.html" class="navbar-brand d-flex w-50 mr-auto" id = "name">Daniel Galarraga</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end" id = "menu">
+            <li class="nav-item active">
+                <a class="nav-link" href="./Playground.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="MyResume.pdf" target = "_blank">Resume</a>
+            </li>
+        </ul>
+    </div>
+    </nav> 
+    <hr style="border: 1px solid black"/>  
+    <div class = "wrapper">
+      <nav id="sidebar">
+        <figure class="figure" id = "img_header">
+          <img src="./me.jpg" class="figure-img img-fluid rounded" alt="Me">
+          <figcaption class="figure-caption text-center" style="color: black; font-size: 1.1em;" >
+            Daniel Galarraga </br> Cornell CS '21 </figcaption>
+        </figure>
+        <ul class="list-unstyled">
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./linkedin.png" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "https://www.linkedin.com/in/daniel-galarraga/" target="_blank">LinkedIn</a>
+            </div>
+          </li>
+        </br>
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./github.jpg" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "https://github.com/danielgalarraga" target="_blank">GitHub</a>
+            </div>
+          </li>
+          </br>
+          <li class="media">
+            <img class="d-flex align-self-center mr-2" src="./email.png" style="height: 10px; width: 10px">
+            <div class="media-body">
+              <a href = "mailto: danielga11@hotmail.com" target="_blank">Email</a>
+            </div>
+          </li>
+        </ul>
+        </nav>
+      <div id="content">
+        <div class="media">
+          <div class="media-body">
+            <h5 class="mt-3 mr-50 font-weight-bold" style= "margin-left: -50px; font-size: 1.7vw;">Welcome</h5>
+            <p style = "font-size: 1.5vw; margin-left: -50px;">
+            I am a computer science student at Cornell University who is particularly interested in data mining & applied mathematics.  
+            </br> </br>
+            I am also committed to increasing diversity in computer science.
+            </br> </br>
+            Besides academics, I enjoy watching/playing soccer, working out and reading about nutrition/self-improvement. 
+            </br> </br>
+            In Fall 2018, I will be a teaching assistant for <a href = "https://courses.cs.cornell.edu/cs2800/wiki/index.php/CS_2800_Fall_2018" target = "_blank"> CS 2800: Discrete Structures! </a> </p>
+          </div>
+          <img class="d-flex ml-3 mr-5 rounded" src="./front.jpg" style = "height: auto; width: 50%">
+        </div>
+      </div>
+
+    </div>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
