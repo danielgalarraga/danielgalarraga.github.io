@@ -1,21 +1,21 @@
 @font-face {
 font-family: "Roboto Thin";
-src: url("./Other_Fonts/Roboto-Thin.ttf");
+src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Thin.ttf");
 }
 
 @font-face {
 font-family: "Roboto";
-src: url("./Other_Fonts/Roboto-Bold.ttf");
+src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
 font-family: "Hero Light";
-src: url("./Other_Fonts/Hero-Light.otf");
+src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Hero-Light.otf");
 }
 
 @font-face {
 font-family: "Open Sans";
-src: url("./Other_Fonts/OpenSans-Bold.ttf");
+src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/OpenSans-Bold.ttf");
 }
 
 #name {
