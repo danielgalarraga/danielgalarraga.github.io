@@ -1,38 +1,30 @@
 @font-face {
 font-family: "Roboto Thin";
-src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Thin.ttf"),
-	 url('https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/roboto-thin-webfont.woff2') format('woff2'),
-     url('https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/roboto-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+src: url("./Other_Fonts/Roboto-Thin.ttf");
 }
 
 @font-face {
 font-family: "Roboto";
-src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Bold.ttf");
+src: url("./Other_Fonts/Roboto-Bold.ttf");
 }
 
 @font-face {
 font-family: "Hero Light";
-src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Hero-Light.otf");
+src: url("./Other_Fonts/Hero-Light.otf");
 }
 
 @font-face {
 font-family: "Open Sans";
-src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/OpenSans-Bold.ttf");
+src: url("./Other_Fonts/OpenSans-Bold.ttf");
 }
 
 #name {
-	font-family: "Roboto";
+	font-weight: bold;
 	margin-left: 250px;
 }
 
 #menu {
 	margin-right: 40px;
-}
-
-#menu a {
-	font-family: "Roboto Thin";
 }
 
 #menu a:hover {
@@ -60,15 +52,10 @@ src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fon
 }
 
 #img_header figcaption {
-	font-family: "Roboto";
 }
 
 #sidebar ul {
 	padding-left: 25px;
-}
-
-#sidebar a {
-	font-family: "Roboto Thin";
 }
 
 .media a {
@@ -82,16 +69,12 @@ src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fon
 }
 
 body {
-	font-family: "Roboto Thin";
+	font-weight: lighter;
 }
 
 #content_projects {
 	margin-left: -40px;
 	margin-top: 15px;
-}
-
-#content .media-body p {
-	font-family: "Roboto Thin";
 }
 
 #project1 {
@@ -134,8 +117,3 @@ body {
 	border-bottom: 0 none;
 }
 
-#footer {
-	font-weight: bold;
-	font-family: "Roboto";
-
-}
