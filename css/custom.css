@@ -1,6 +1,10 @@
 @font-face {
 font-family: "Roboto Thin";
-src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Thin.ttf");
+src: url("https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/Roboto-Thin.ttf"),
+	 url('https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/roboto-thin-webfont.woff2') format('woff2'),
+     url('https://github.com/danielgalarraga/danielgalarraga.github.io/Other_Fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
