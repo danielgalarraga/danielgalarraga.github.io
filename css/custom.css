@@ -21,11 +21,11 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 
 #name {
 	font-weight: bold;
-	margin-left: 150px;
+	margin-left: 100px;
 }
 
 #menu {
-	margin-right: 60px;
+	margin-right: 40px;
 }
 
 #menu a:hover {
@@ -43,7 +43,7 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 	padding-top: 20px;
 	min-width: 225px;
 	max-width: 250px;
-	margin-left: 170px;
+	margin-left: 130px;
 	min-height: 100vh;
 }
 
