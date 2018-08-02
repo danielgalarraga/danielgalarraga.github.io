@@ -62,7 +62,6 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 .media a {
 	align-content: center;
 	color: black;
-	text-decoration: none;
 }
 
 .media a:hover {
