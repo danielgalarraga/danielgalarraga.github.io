@@ -21,7 +21,7 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 
 #name {
 	font-weight: bold;
-	margin-left: 103px;
+  margin-left: 70px;
 }
 
 #nameid {
@@ -36,7 +36,7 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
   font-size: 22px;
 }
 #menu {
-	margin-right: 40px;
+	margin-right: 70px;
 }
 
 #menu a:hover {
