@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daniel Galarraga</title>
-    
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style>
-    .bg-1 { 
-        background-color: white; /* Green */
-        color: black;
-    }
-    .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-    }
-    
-    </style>
-  </head>
 
-  <body>
+<head>
+  <meta http-equiv="refresh" content="300">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Daniel Galarraga</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="./css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./css/custom.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navigation -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center" >
     <a href="./index.html" class="navbar-brand d-flex w-50 mr-auto" id = "name">Daniel Galarraga</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
@@ -42,57 +41,71 @@
             </li>
         </ul>
     </div>
-    </nav> 
-    <hr style="border: 1px solid black"/>  
-    <div class = "wrapper">
-      <nav id="sidebar">
-        <figure class="figure" id = "img_header">
-          <img src="./me.jpg" class="figure-img img-fluid rounded" alt="Me">
-          <figcaption class="figure-caption text-center" style="color: black; font-size: 1.1em;" >
-            Daniel Galarraga </br> Cornell CS '21 </figcaption>
-        </figure>
-        <ul class="list-unstyled">
-          <li class="media">
-            <img class="d-flex align-self-center mr-2" src="./linkedin.png" style="height: 10px; width: 10px">
-            <div class="media-body">
-              <a href = "https://www.linkedin.com/in/daniel-galarraga/" target="_blank">LinkedIn</a>
-            </div>
-          </li>
-        </br>
-          <li class="media">
-            <img class="d-flex align-self-center mr-2" src="./github.jpg" style="height: 10px; width: 10px">
-            <div class="media-body">
-              <a href = "https://github.com/danielgalarraga" target="_blank">GitHub</a>
-            </div>
-          </li>
-          </br>
-          <li class="media">
-            <img class="d-flex align-self-center mr-2" src="./email.png" style="height: 10px; width: 10px">
-            <div class="media-body">
-              <a href = "mailto: danielga11@hotmail.com" target="_blank">Email</a>
-            </div>
-          </li>
-        </ul>
-        </nav>
-      <div id="content">
-        <div class="media">
-          <div class="media-body">
-            <h5 class="mt-3 mr-50 font-weight-bold" style= "margin-left: -50px; font-size: 1.7vw;">Welcome!</h5>
-            <p style = "font-size: 1.5vw; margin-left: -50px;">
-            I am a computer science student at Cornell University who is particularly interested in data mining & applied mathematics.  
-            </br> </br>
-            I am also committed to increasing diversity in computer science.
-            </br> </br>
-            Besides academics, I enjoy watching/playing soccer, working out and reading about nutrition/self-improvement. 
-            </br> </br>
-            In Fall 2018, I will be a teaching assistant for <a href = "https://courses.cs.cornell.edu/cs2800/wiki/index.php/CS_2800_Fall_2018" target = "_blank"> CS 2800: Discrete Structures! </a> </p>
+    </nav>  
+  <hr style="border: 1px solid black">
+    <div class="container theme-showcase" role="main">
+    <div class="jumbotron">
+      <div class="row" style = "margin-top: -25px; margin-bottom: -35px;">
+        <!-- Image of me -->
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 vcenter">
+          <div class="pull-left">
+            <img src='./me2.jpg' width=250 class='img-responsive'>
           </div>
-          <img class="d-flex ml-3 mr-5 rounded" src="./front.jpg" style = "height: auto; width: 50%">
+        </div><!--
+        --><!--
+      --><div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 col-xs-push-0 col-sm-push-0 col-md-pull-3 col-lg-pull-2 vcenter" style = "margin-left: -10px; margin-top: -10px;">
+      <h1 id = "nameid">Daniel Galarraga</h1>
+      <h3 id = "cornellid">Cornell CS '21</h3>
+      <p id = "par">
+        I am a computer science student at <br>
+        Cornell University who is particularly <br>
+        interested in data mining & applied mathematics. <br> <br>
+        Contact Me: <br>
+        <span class="fa fa-envelope fa-1x"></span>
+        <a href="mailto:dgalarraga11@gmail.com">
+          dgalarraga11@gmail.com
+        </a>
+      </p>
+    </div>
+    <div class="col-xs-6 col-sm-5 col-md-3 col-lg-2 col-xs-push-0 col-sm-push-1 col-md-push-5 col-lg-push-6 vcenter">
+        <div class="pull-right" style = "margin-left: -10px;">
+          <img src='cornell.png' class = "img-responsive">
+          <br><br>
+          <center>
+            <div class = "card-deck" style = "margin-left: -25px; max-width: 250px;">
+              <div>
+                <a href="https://github.com/danielgalarraga" target = "_blank" class="list-group-item" id = "github" title="GitHub"><i class="fab fa-github fa-3x"></i></a>
+              </div>
+              <div style = "margin-left: 10px;">
+                <a href="https://www.linkedin.com/in/daniel-galarraga" target = "_blank" id = "linkedin" class="list-group-item" title="LinkedIn"> <i class="fab fa-linkedin fa-3x"></i></a>
+              </div>
+            </div>
+          </center>
         </div>
       </div>
+  </div>
+</div>
+<h3 style = "font-size: 1.9em;"> About Me </h3>
+<hr style="border: 0.1px solid black">
+<p class="lead" style = "font-size: 1.3em;">
+  I have lived in numerous countries around the world, specifically Malaysia, Venezuela, Brazil & USA. Living in these places has not only allowed me to learn Spanish & Portuguese, but also want to increase diversity in computer science. Besides academics, I enjoy watching/playing soccer, working out and reading about nutrition/self-improvement.
+</p>
+<hr >
+<footer>
+  <div class="media">
+    <div class="col-xs-6">
+        <p style = "margin-left: 35vw" >Daniel Galarraga (2018)</p>
+    </div>
+  </div>
+</footer>
+</div>
 
-    </div>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.js"></script>
+
+</body>
 </html>
+

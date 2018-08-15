@@ -24,12 +24,34 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 	margin-left: 103px;
 }
 
+#nameid {
+  font-size: 55px;
+}
+
+#cornellid {
+  font-size: 35px;
+}
+
+#par {
+  font-size: 22px;
+}
 #menu {
 	margin-right: 40px;
 }
 
 #menu a:hover {
 	color: black;
+}
+
+#container {
+  margin-left: 75px;
+}
+
+#jumbotron {
+  max-height: 420px;
+  max-width: 1000px;
+  min-height: 300px;
+  max-width: 1200px;
 }
 
 .wrapper {
@@ -110,11 +132,32 @@ body {
 	margin-left: 20px;
 }
 
+#github, #linkedin {
+  color: black;
+}
+
 #item1, #item2, #item3, #item4 {
 	border-top: 0 none;
 	border-left: 0 none;
 	border-right: 0 none;
 	border-bottom: 0 none;
 }
+
+.img-responsive {
+    width: 80%;
+    max-width: 80%;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.embed-responsive-100x400px{
+  padding-bottom: 400px;
+}
+
+
 
 
