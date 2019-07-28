@@ -34,6 +34,7 @@ src: url("./Other_Fonts/OpenSans-Bold.ttf");
 
 #par {
   font-size: 22px;
+  max-width: 360px;
 }
 #menu {
 	margin-right: 70px;
@@ -134,6 +135,10 @@ body {
 
 #github, #linkedin {
   color: black;
+}
+
+#github:hover, #linkedin:hover {
+  opacity: 0.5;
 }
 
 #item1, #item2, #item3, #item4 {
